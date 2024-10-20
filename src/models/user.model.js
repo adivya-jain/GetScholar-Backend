@@ -19,119 +19,120 @@ const userSchema = new Schema(
       },
       password: {
          type: String,
-         required: [true, 'Password is required'],
+         required: [true, "Password is required"],
          minLegth: 8,
-
       },
       gender: {
          //enum
          type: String,
-         enum:["Male","Female","Other"],
+         enum: ["Male", "Female", "Other"],
          required: true,
       },
       avatar: {
-            type: String,
-            
+         type: String,
       },
       caste: {
          //enum
          type: String,
-         enum:["General","OBC","SC","ST"],
+         enum: ["General", "OBC", "SC", "ST"],
       },
       religion: {
          //enum
-            type: String,
-            enum:["Jain","Hindu","Muslim","Sikh","Christian","Buddhist","Other"],
+         type: String,
+         enum: [
+            "Jain",
+            "Hindu",
+            "Muslim",
+            "Sikh",
+            "Christian",
+            "Buddhist",
+            "Other",
+         ],
       },
       phoneNumber: {
-            type: Number,
-            // required: true,
-            minLegth: 10,
-            maxLegth: 10,
+         type: Number,
+         // required: true,
+         minLegth: 10,
+         maxLegth: 10,
       },
       address: {
-            type: String,
-            // required: true,
+         type: String,
+         // required: true,
       },
       city: {
-            type: String,
-            
+         type: String,
       },
-      state: {  
-            type: String,
+      state: {
+         type: String,
       },
       country: {
-            type: String,
+         type: String,
       },
-      qualification: {
-
-      },
+      qualification: {},
       dob: {
-            type: Date,
-            // required: true,
+         type: Date,
+         // required: true,
       },
-      tenthPercentage: {    
-        type: Number,
+      tenthPercentage: {
+         type: Number,
       },
       twelthPercentage: {
-        type: Number,
+         type: Number,
       },
       jeemainRank: {
-        type: Number,
+         type: Number,
       },
       jeemainPercentile: {
-        type: Number,
+         type: Number,
       },
       schoolName: {
-        type: String,
+         type: String,
       },
       stream: {
-        type: String,
+         type: String,
       },
       collegeName: {
-        type: String,
+         type: String,
       },
       branch: {
-        type: String,
+         type: String,
       },
       disablity: {
-        type: Boolean,
+         type: Boolean,
       },
       disablityType: {
-        type: String,
+         type: String,
       },
       disablityPercentage: {
-        type: Number,
+         type: Number,
       },
       disablityCertificate: {
-        type: String,
+         type: String,
       },
       incomeRange: {
-        type: String,
+         type: String,
       },
       incomeCertificate: {
-        type: String,
+         type: String,
       },
       graduationYear: {
-        type: Number,
+         type: Number,
       },
-      currentCGPA: {    
-        type: Number,
+      currentCGPA: {
+         type: Number,
       },
-      scholarShipAppiledFor: {
-
-      },
+      scholarShipAppiledFor: {},
       scholarShipStatus: {
-        type: String,
+         type: String,
       },
       howDidYouKnowAboutUs: {
-        type: String,
+         type: String,
       },
       subscribeUsForUpdates: {
-        type: Boolean,
+         type: Boolean,
       },
       refreshToken: {
-            type: String,
+         type: String,
       },
    },
    {
