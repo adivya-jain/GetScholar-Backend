@@ -1,3 +1,3 @@
 # GetScholar-Backend
-/all-scholarship view all scholarships
-/addscholarship add a new scholarship
+"/all-scholarship" view all scholarships <br>
+"/addscholarship" add a new scholarship
